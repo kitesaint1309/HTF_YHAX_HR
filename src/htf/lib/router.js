@@ -10,3 +10,6 @@ Router.configure({
 Router.route("/", {
     name: "homeIndex"
 });
+Router.route("/map", {
+    name: "roverMap"
+});
