@@ -1,3 +1,24 @@
 <template name="homeIndex">
-
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>X coordinate</th>
+            <th>Y coordinate</th>
+            <th>Distance to base</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each rover in rovers}}
+            <tr>
+                <td>{{rover.id}}</td>
+                <td>{{rover.name}}</td>
+                <td>{{rover.position.x}}</td>
+                <td>{{rover.position.y}}</td>
+                <td>{{rover.distance}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
 </template>

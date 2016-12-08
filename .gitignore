@@ -117,3 +117,6 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+src/htf/.idea/libraries/meteor_packages_auto_import_browser.xml
+src/htf/.idea/libraries/meteor_packages_auto_import_npm.xml
+src/htf/.idea/workspace.xml
