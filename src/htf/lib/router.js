@@ -13,4 +13,6 @@ Router.route("/", {
 Router.route("/rover/:id", {
     name: "roverDetail"
 });
-
+Router.route("/map", {
+    name: "roverMap"
+});
