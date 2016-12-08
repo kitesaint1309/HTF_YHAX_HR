@@ -1,0 +1,28 @@
+<template name="roverDetail">
+    <div class="RD">
+        <h2>{{rover.name}}</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Distance To Base</th>
+                <th>Speed</th>
+                <th>direction</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{rover.distance}}</td>
+                <td>{{rover.speed}}</td>
+                <td>{{rover.direction}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div id="chartWater">
+
+        </div>
+        <div id="chartTemps">
+
+        </div>
+    </div>
+
+</template>

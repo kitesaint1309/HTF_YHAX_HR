@@ -1,7 +1,12 @@
 <template name="homeIndex">
+
+    <p>Highest temperature: {{temps.top}}</p>
+    <p>Lowest temperature: {{temps.low}}</p>
+    <a>Find My Rovers</a>
     <table>
         <thead>
         <tr>
+            <th>is favo</th>
             <th>Id</th>
             <th>Name</th>
             <th>X coordinate</th>
@@ -11,12 +16,15 @@
         </thead>
         <tbody>
         {{#each rover in rovers}}
-            <tr>
-                <td>{{rover.id}}</td>
-                <td>{{rover.name}}</td>
-                <td>{{rover.position.x}}</td>
-                <td>{{rover.position.y}}</td>
-                <td>{{rover.distance}}</td>
+
+            <tr style="{{#if isfavo rover.id }}background:#00ff00{{/if}}">
+                <td><input class="fovorite" type="checkbox" checked="{{#if isfavo rover.id }}true{{/if}}" data-id="{{rover.id}}"></td>
+                <td><a href="/rover/{{rover.id}}">{{rover.id}}</a></td>
+                <td><a href="/rover/{{rover.id}}">{{rover.name}}</a></td>
+                <td><a href="/rover/{{rover.id}}">{{rover.position.x}}</a></td>
+                <td><a href="/rover/{{rover.id}}">{{rover.position.y}}</a></td>
+                <td><a href="/rover/{{rover.id}}">{{rover.distance}}</a></td>
+
             </tr>
         {{/each}}
         </tbody>

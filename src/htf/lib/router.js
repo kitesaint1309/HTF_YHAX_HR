@@ -10,3 +10,7 @@ Router.configure({
 Router.route("/", {
     name: "homeIndex"
 });
+Router.route("/rover/:id", {
+    name: "roverDetail"
+});
+
