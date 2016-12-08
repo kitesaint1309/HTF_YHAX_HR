@@ -1,5 +1,17 @@
 <template name="roverMap">
-    <div>
-        <canvas id="map" width="800" height="800" style="background-image: url('/img/mars.jpg'); background-size: contain"></canvas>
+    <h1>Where are our rovers?</h1>
+    <div style="top: 50%; left: 50%; position: fixed; transform: translate(-50%, -45%);">
+        <canvas class="canvas" id="map" width="800" height="800" style="background-image: url('/img/mars.jpg'); background-size: contain"></canvas>
     </div>
+    <style>
+        canvas {
+            border:3px solid #00FFFF;
+            border-radius: 3%;
+        }
+        h1 {
+            margin-top: 2.5%;
+            text-align: center;
+            color: aqua;
+        }
+    </style>
 </template>

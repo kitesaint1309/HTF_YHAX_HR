@@ -21,8 +21,7 @@ drawRoverOnMap = function (ctx) {
     Rovers.forEach(function (rover, index) {
         console.log("draw" + rover);
         //ctx.drawImage(imageRover, rover.position.x * 2 + roverMap.width / 4, rover.position.y * 2 + roverMap.height / 4, 50, 50)
-        //ctx.fillStyle= getColor();
-        console.log(index);
+        //ctx.fillStyle= rover.color;
         ctx.fillRect(rover.position.x + roverMap.width / 2, rover.position.y + roverMap.height / 2, 10, 10);
     });
 };
